@@ -12,6 +12,30 @@ export const metadata = {
     metadataBase: new URL(defaultUrl),
     title: "UndeVotez.ro",
     description: "Aici găsești secțiile de votare în diaspora.",
+    icons: {
+        icon: "/favicon.svg",
+    },
+    openGraph: {
+        type: "website",
+        title: "UndeVotez.ro",
+        description: "Aici găsești secțiile de votare în diaspora.",
+        url: defaultUrl,
+        siteName: "UndeVotez.ro",
+        images: [
+            {
+                url: "/undevotez-fb-share.jpg",
+                width: 1200,
+                height: 630,
+                alt: "UndeVotez.ro - Secții de votare în diaspora",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "UndeVotez.ro",
+        description: "Aici găsești secțiile de votare în diaspora.",
+        images: ["/undevotez-twitter-share.jpg"],
+    },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
