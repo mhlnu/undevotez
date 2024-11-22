@@ -4,9 +4,7 @@ import { ThemeProvider } from "next-themes";
 import Link from "next/link";
 import "./globals.css";
 
-const defaultUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3000";
+const defaultUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export const metadata = {
     metadataBase: new URL(defaultUrl),
@@ -23,7 +21,7 @@ export const metadata = {
         siteName: "UndeVotez.ro",
         images: [
             {
-                url: "/undevotez-fb-share.jpg",
+                url: new URL("/undevotez-fb-share.jpg", defaultUrl).toString(),
                 width: 1200,
                 height: 630,
                 alt: "UndeVotez.ro - Secții de votare în diaspora",
@@ -34,7 +32,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "UndeVotez.ro",
         description: "Aici găsești secțiile de votare în diaspora.",
-        images: ["/undevotez-twitter-share.jpg"],
+        images: [new URL("/undevotez-twitter-share.jpg", defaultUrl).toString()],
     },
 };
 
