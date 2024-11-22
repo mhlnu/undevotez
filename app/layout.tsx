@@ -4,7 +4,7 @@ import { ThemeProvider } from "next-themes";
 import Link from "next/link";
 import "./globals.css";
 
-const defaultUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const defaultUrl = "http://www.undevotez.ro";
 
 export const metadata = {
     metadataBase: new URL(defaultUrl),
