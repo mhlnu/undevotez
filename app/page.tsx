@@ -55,11 +55,12 @@ export default function Home() {
             <div className="mb-6 rounded-lg border border-gray-300 w-full py-4 px-6 bg-stone-50 dark:bg-black text-black">
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
                     <strong>Ajutor:</strong>
-                    <br /> Scrie numele localității, codul poștal etc. și o listă de
-                    secții de votare va fi generată instant.
+                    <br /> Scrie țara, numele localității etc. și o listă de secții de
+                    votare va fi generată instant.
                     <br />
                     În cazul în care cauți după țară, folosește numele oficial (ex:.
-                    "Regatul Arabiei Saudite" în loc de "Arabia Saudită").
+                    "Regatul Arabiei Saudite" în loc de "Arabia Saudită"; "Regatul Unit"
+                    în loc de "Anglia" etc.).
                 </p>
             </div>
             <SearchInput
