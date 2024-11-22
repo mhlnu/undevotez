@@ -48,12 +48,11 @@ export default function Home() {
     return (
         <div className="w-full max-w-[650px]">
             <h2 className="text-4xl text-center font-light mb-14 flex justify-center items-end gap-4">
-                <Image src={logo} alt="Logo" className="h-14 w-auto pb-1" />
+                <Image src={logo} alt="Logo" className="h-14 w-auto pb-1 dark:invert" />
                 <span>Secții de votare în diaspora</span>
             </h2>
-
-            <div className="mb-6 rounded-lg border border-gray-300 w-full py-4 px-6 bg-stone-50">
-                <p className="text-gray-600 text-sm">
+            <div className="mb-6 rounded-lg border border-gray-300 w-full py-4 px-6 bg-stone-50 dark:bg-black text-black">
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
                     <strong>Ajutor:</strong>
                     <br /> Scrie numele localității, codul poștal etc. și o listă de
                     secții de votare va fi generată instant.

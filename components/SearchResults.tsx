@@ -55,15 +55,12 @@ export default function SearchResults({ stations }: SearchResultsProps) {
                             {Object.entries(towns).map(([town, stations]) => (
                                 <div key={`${city}-${town}`} className="mb-6">
                                     {town !== "default" && (
-                                        <h4 className="text-lg font-medium text-black mb-2">
+                                        <h4 className="text-lg font-medium text-black mb-2 dark:text-gray-300">
                                             {town}
                                         </h4>
                                     )}
                                     {stations.map(station => (
-                                        <div
-                                            key={station.id}
-                                            className="bg-white pl-2 mb-4"
-                                        >
+                                        <div key={station.id} className="pl-2 mb-4">
                                             <div className="flex items-start text-sm">
                                                 <MapPin className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" />
                                                 <div>
@@ -94,7 +91,7 @@ export default function SearchResults({ stations }: SearchResultsProps) {
                                                             )
                                                         </span>
                                                     </div>
-                                                    <p className="text-gray-600">
+                                                    <p className="text-gray-600 dark:text-gray-300">
                                                         {station.address}
                                                     </p>
                                                 </div>

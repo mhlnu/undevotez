@@ -61,6 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
                             <footer className="w-full mt-auto flex items-center justify-center border-t mx-auto text-center text-xs gap-8 py-16">
                                 <p>Built in England</p>
+                                <ThemeSwitcher />
                             </footer>
                         </div>
                     </main>
