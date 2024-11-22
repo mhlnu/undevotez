@@ -69,13 +69,17 @@ export default function SearchResults({ stations }: SearchResultsProps) {
                                                 <div>
                                                     <div>
                                                         <span className="font-semibold mr-2">
-                                                            {town === "default"
+                                                            {town === "default" &&
+                                                            stations.length === 1
                                                                 ? "Secție unică"
-                                                                : town}
+                                                                : town === "default" &&
+                                                                    stations.length > 1
+                                                                  ? ""
+                                                                  : town}
                                                             {station.station ? (
                                                                 <>
                                                                     {" "}
-                                                                    - Secția{" "}
+                                                                    Secția{" "}
                                                                     {station.station}
                                                                 </>
                                                             ) : (
