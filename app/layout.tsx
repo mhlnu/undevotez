@@ -11,8 +11,7 @@ const defaultUrl = process.env.VERCEL_URL
 export const metadata = {
     metadataBase: new URL(defaultUrl),
     title: "UndeVotez.ro",
-    description:
-        "Secțiile de votare pentru alegerile prezidențiale și parlamentare din România.",
+    description: "Aici găsești secțiile de votare în diaspora.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
