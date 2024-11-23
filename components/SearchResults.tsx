@@ -85,7 +85,9 @@ export default function SearchResults({ stations }: SearchResultsProps) {
                                                         </span>
                                                         <span className="text-sky-600">
                                                             (
-                                                            <a href="https://maps.google.com/maps?output=search&q=">
+                                                            <a
+                                                                href={`https://maps.google.com/maps?output=search&q=${station.address}`}
+                                                            >
                                                                 Google Maps
                                                             </a>
                                                             )
