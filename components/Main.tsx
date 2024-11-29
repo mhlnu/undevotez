@@ -16,7 +16,7 @@ type PollingStation = {
     address: string;
 };
 
-export default function Main() {
+export default function Main({ geoData }) {
     const [searchTerm, setSearchTerm] = useState("");
     const [pollingStations, setPollingStations] = useState<PollingStation[]>([]);
     const [filteredStations, setFilteredStations] = useState<PollingStation[]>([]);
@@ -44,6 +44,8 @@ export default function Main() {
             setFilteredStations([]);
         }
     }, [searchTerm, pollingStations]);
+
+    console.log(geoData);
 
     return (
         <div className="w-full max-w-[650px] p-6">
