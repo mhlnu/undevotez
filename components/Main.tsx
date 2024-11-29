@@ -16,7 +16,14 @@ type PollingStation = {
     address: string;
 };
 
-export default function Main({ geoData }) {
+interface GeoData {
+    country: string | null;
+    city: string | null;
+    latitude: string | null;
+    longitude: string | null;
+}
+
+export default function Main({ geoData }: { geoData: GeoData | null }) {
     const [searchTerm, setSearchTerm] = useState("");
     const [pollingStations, setPollingStations] = useState<PollingStation[]>([]);
     const [filteredStations, setFilteredStations] = useState<PollingStation[]>([]);
